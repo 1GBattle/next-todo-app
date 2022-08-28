@@ -1,0 +1,43 @@
+.todoCard {
+	border: 1px solid #ccc;
+	width: 36rem;
+	height: 25rem;
+	padding: 0.5rem;
+}
+
+.todoCard:hover {
+	box-shadow: 6px 6px 9px rgba(0, 0, 0, 0.267);
+}
+
+.todoTitle {
+	text-align: center;
+	margin: 0;
+	font-size: 2.4rem;
+}
+
+.todoDate {
+	margin: 0;
+	font-size: 1.2rem;
+}
+
+.descriptionContainer {
+	height: 13.5rem;
+	margin-top: 1.6rem;
+	font-size: 1.6rem;
+}
+
+.hRule {
+	width: 75%;
+}
+
+.btnContainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.todoBtn {
+	width: 50%;
+	background-color: var(--primary-red);
+	font-size: 1.6rem;
+}

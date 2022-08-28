@@ -1,0 +1,73 @@
+.container {
+	max-width: 60rem;
+	margin: 0 auto;
+	border: 1px solid #aaa;
+	padding: 0 3.2rem 3.2rem;
+}
+
+.pageTitle {
+	font-size: 3rem;
+	font-weight: bold;
+	text-align: center;
+}
+
+.hRule {
+	background-color: #aaa;
+	margin-top: -1.6rem;
+	margin-bottom: 3.2rem;
+	width: 50%;
+}
+
+.form {
+	margin-top: 1rem;
+	flex-direction: column;
+	gap: 2rem;
+	margin-top: 6.4rem;
+	border-radius: 6px;
+}
+
+.formGroup {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 2.4rem;
+}
+
+.formLabel {
+	font-weight: bold;
+	font-size: 2rem;
+	margin-bottom: 0.5rem;
+}
+
+.formTextArea {
+	height: 16rem;
+	font-size: 2rem;
+	font-weight: normal;
+	resize: none;
+}
+
+.formInput {
+	height: 4rem;
+	font-size: 2.4rem;
+	font-weight: normal;
+}
+
+.buttonGroup {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+}
+
+.createBtn {
+	width: 60%;
+	height: 3rem;
+	background-color: var(--primary-blue);
+	font-size: 2rem;
+}
+
+.createBtn:hover,
+.createBtn:focus,
+.createBtn:active {
+	background-color: var(--secondary-blue);
+}

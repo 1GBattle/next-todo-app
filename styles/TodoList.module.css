@@ -1,0 +1,12 @@
+.container {
+	width: 180rem;
+	margin: 0 auto;
+}
+
+.todoListContainer {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 2.4rem;
+	row-gap: 4.8rem;
+	margin-top: 4.8rem;
+}
