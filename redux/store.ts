@@ -1,7 +1,5 @@
 import { configureStore } from '@reduxjs/toolkit'
-import { useDispatch } from 'react-redux'
-
-import todoSlice from './todoSlice'
+import todoSlice from './todos/todosSlice'
 
 const store = configureStore({
 	reducer: {

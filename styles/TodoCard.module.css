@@ -3,6 +3,7 @@
 	width: 36rem;
 	height: 25rem;
 	padding: 0.5rem;
+	cursor: pointer;
 }
 
 .todoCard:hover {
@@ -18,16 +19,23 @@
 .todoDate {
 	margin: 0;
 	font-size: 1.2rem;
+	text-align: center;
 }
 
 .descriptionContainer {
 	height: 13.5rem;
-	margin-top: 1.6rem;
+	padding: 0 1.2rem;
 	font-size: 1.6rem;
 }
 
+.todoDescription {
+	margin: 0;
+	height: 13.5rem;
+	overflow: auto;
+}
+
 .hRule {
-	width: 75%;
+	width: 90%;
 }
 
 .btnContainer {

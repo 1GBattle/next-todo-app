@@ -46,3 +46,36 @@ a {
 .box-shadow {
 	box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.267);
 }
+
+.form {
+	margin-top: 3.2rem !important;
+	flex-direction: column;
+	gap: 2rem;
+	margin-top: 6.4rem;
+	border-radius: 6px;
+}
+
+.formGroup {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 2.4rem;
+}
+
+.formLabel {
+	font-weight: bold;
+	font-size: 2rem;
+	margin-bottom: 0.5rem;
+}
+
+.formTextArea {
+	height: 16rem;
+	font-size: 2rem;
+	font-weight: normal;
+	resize: none;
+}
+
+.formInput {
+	height: 4rem;
+	font-size: 2.4rem;
+	font-weight: normal;
+}

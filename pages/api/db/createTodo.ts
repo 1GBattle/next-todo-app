@@ -16,15 +16,15 @@ const CreateTodo = async (req: NextApiRequest, res: NextApiResponse) => {
 					description,
 					completed: false,
 					createdAt: moment.now(),
-					updatedAt: moment.now(),
+					updatedAt: null,
 					id: uuidv4()
 				} as TodoModel
 
-				await setDoc(doc(db, 'todos', todo.id?.toString()!), {
+				await setDoc(doc(db, 'todos', todo.id.toString()), {
 					todo
 				})
 
-				res.status(200).json({ message: 'Todo created successfully', data: todo })
+				res.status(200).json(todo)
 			} catch (error: any) {
 				res.status(500).json({ error: error.code })
 			}

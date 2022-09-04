@@ -1,26 +1,27 @@
+import { query, collection, getDocs } from 'firebase/firestore'
 import { NextApiRequest, NextApiResponse } from 'next'
-import { collection, getDocs, query, where } from 'firebase/firestore'
 import { db } from '../../../firebase/firebase'
+import TodoModel from '../../../models/TodoModel'
 
 const getTodos = async (req: NextApiRequest, res: NextApiResponse) => {
-	const { uid } = req.query
-	let todos: any[] = []
+	let todos: TodoModel[] = []
 
-	if (uid) {
+	if (req.method === 'GET') {
 		try {
-			const dbQuery = query(collection(db, 'todos'), where('userId', '==', uid))
-			const querySnapshot = await getDocs(dbQuery)
+			const q = query(collection(db, 'todos'))
 
+			const querySnapshot = await getDocs(q)
 			querySnapshot.forEach((doc) => {
-				todos.push(doc.data())
+				// doc.data() is never undefined for query doc snapshots
+				todos.push(doc.data().todo as TodoModel)
 			})
 
-			res.status(200).json(todos)
-		} catch (err: any) {
-			res.status(500).json({ message: err.code })
+			res.status(200).json(todos.flat())
+		} catch (error: any) {
+			res.status(500).json({ error: error.message })
 		}
 	} else {
-		res.status(400).json({ message: 'Bad request, missing uid' })
+		res.status
 	}
 }
 
