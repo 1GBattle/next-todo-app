@@ -5,6 +5,7 @@ import TodoList from '../components/TodoList'
 import styles from '../styles/Home.module.css'
 import SearchBar from '../components/SearchBar'
 
+// comment to force git push
 const Home: NextPage = () => {
 	const [searchTerm, setSearchTerm] = React.useState<string>('')
 
