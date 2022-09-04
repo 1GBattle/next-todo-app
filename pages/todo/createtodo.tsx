@@ -1,7 +1,6 @@
 import React, { FormEvent } from 'react'
 import axios from 'axios'
 import { NextPage } from 'next'
-import Link from 'next/link'
 import NavBar from '../../components/NavBar'
 import { useAppDispatch } from '../../redux/hooks/hooks'
 import { createTodo } from '../../redux/todos/todosSlice'
